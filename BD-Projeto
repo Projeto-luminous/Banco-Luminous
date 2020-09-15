@@ -1,0 +1,19 @@
+create database projetopi;
+use projetopi;
+create table DadosAcesso(
+IdEmpresa int primary key auto_increment,
+Nome varchar(60),
+Email varchar(70),
+Endereço varchar(70),
+TelefoneFixo int,
+TelefoneComercial int,
+TelefoneCelular bigint,
+CPF bigint,
+Senha varchar(10)
+) auto_increment=100;
+select*from DadosAcesso;
+insert into DadosAcesso(Nome,Email,Endereço,TelefoneFixo,TelefoneComercial,TelefoneCelular,CPF,Senha) values
+('blabla','blabla@hotmail.com','R.zé do leite','1128963456','1135642000','11985613225','43128945610','bla7563');
+select*from DadosAcesso;
+
+
